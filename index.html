@@ -6,47 +6,38 @@
     <title>Quiz Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <div class="heading">
-            <div class= "title">JavaScript Quiz!</div>
-            <button class="startButton">Start Quiz</button>
-        <div class="timer">
-                <div class = "timerText">
-                    <div class="timerCount">10</div>
+<body> 
+    <div id="quizContainer" class="container"></div>
+    
+        <div id="heading">
+            <div id= "title">JavaScript Quiz!</div>
+            <button id="startButton">Start Quiz</button>
+            <div id="timer">
+                <div id= "timerText">
+                    <div id="timerCount">10</div>
+                </div>
+            </div>       
         </div>
-                    
-      </header> 
-
-      <section>
-
-        <div id="quizContainer" class="container">
-            <div class="info">
+       
+            <div id="info">
                 <h4>Game Info</h4>
-                <p>You'll have 10 seconds to answer all 10 questions</p>
-                <p>If answer is correct 1 second will be added to timer</p>
-                <p>If answer is incorrect 1 second will be subtracted from timer</p>
+                <ul>
+                <li>You'll have 10 seconds to answer all 10 questions</li>
+                <li>If answer is correct 1 second will be added to timer</li>
+                <li>If answer is incorrect 1 second will be subtracted from timer</li>
+                </ul>
             </div>
-            <div class="quiz"></div>
+            <div id="quiz" style="display: none">
+                <div id="questions"></div>
+            </div>
+            <div id="result"></div>
 
-        
-
-            
-            
-
-            <div class="result"></div>
-
-
-
-            <button class="resetButton">Reset Score</button>
+           
+    </div>
+      
 
 
 
-        </div>
-      </section>
-
-
-
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
 </html>
