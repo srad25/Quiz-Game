@@ -1,0 +1,51 @@
+body {
+    background-color: lightblue;
+}
+.heading {
+    margin-top: 0px;
+    padding: 10px;
+    background-color: cornflowerblue;
+}
+.startButton {
+    padding: 5px;
+    background-color: lightgreen;
+    border: lightcyan, solid, 1px;
+    font-size: 16px;
+    height: 30px;
+    line-height: 8px;
+    margin-top: 20px
+    
+}
+.timer {
+    float: right;
+    color: black;
+    cursor: pointer;
+    font-size: 2em;
+    letter-spacing: 0.21px;
+    line-height: 16px;
+    max-width: 255px;
+    padding: 20px 52px;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    margin-top: 0.6em;
+    
+
+  
+}
+.title {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    
+}.container {
+    display: block;
+    margin: 80px auto;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60vw;
+    background-color: #f0ead6;
+  }
