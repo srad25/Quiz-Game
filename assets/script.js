@@ -11,7 +11,7 @@ var initials = document.getElementById("urInitials");
 var submitInit = document.getElementById("submitButton");
 
 
-var timeLeft = questions.length * 10;
+
 var currentQuestion = 0;
 var choices;
 var timer;
@@ -23,7 +23,7 @@ var time;
 // The startGame function is called when the start button is clicked
 function startGame() {
   time = 60;
-// Prevents start button from being clicked when round is in progress
+// Prevents start button from being clicked when quiz is in progress
   startButton.disabled = true;
   startTimer()
 }
@@ -31,7 +31,7 @@ function startTimer() {
   // Sets timer 
   timer = setInterval(function() {
     time --;
-    countDown.textContent = time;
+    countDwn.textContent = time;
     
   // Tests if time has run out
     if (time === 0) {
