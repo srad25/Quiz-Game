@@ -4,40 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz Game</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body> 
     <div id="quizContainer" class="container"></div>
     
-        <div id="heading">
-            <div id= "title">JavaScript Quiz!</div>
+        <div class="heading">
+            <div class="title">JavaScript Quiz!</div>
             <button id="startButton">Start Quiz</button>
-            <div id="timer">
-                <div id= "timerText">
-                    <div id="timerCount">10</div>
+            <div class="timerBox">
+                    <div id="timerNumber">Timer:60</div>
                 </div>
             </div>       
         </div>
-       
-            <div id="info">
-                <h4>Game Info</h4>
-                <ul>
-                <li>You'll have 10 seconds to answer all 10 questions</li>
-                <li>If answer is correct 1 second will be added to timer</li>
-                <li>If answer is incorrect 1 second will be subtracted from timer</li>
-                </ul>
-            </div>
-            <div id="quiz" style="display: none">
-                <div id="questions"></div>
-            </div>
-            <div id="result"></div>
+            
+        <div id="quiz" style="display: none">
+            <div id="questions"></div>
+            <div id="answers"></div>
+            <div id="result"></div>   
 
-           
-    </div>
+        </div>
+
+        <div id="endInfo">
+            <h4>Thank you for playing</h4>
+            <h3>Your final score is <span id="finalScore">0</span></h3>
+            <label for="initials">Enter initials:</label>
+            <input type="text" name="initials" maxlength="3" id="urInitials">
+            <button id="submitButton" type="submit">Submit</button>
+        </div>
       
+        <button id="playAgain"> reset</button>
 
+    </div>
 
-
-        <script src="script.js"></script>
+        <script src="./assets/questions.js"></script>
+        <script src="./assets/script.js"></script>
 </body>
 </html>

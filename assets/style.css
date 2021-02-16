@@ -1,10 +1,14 @@
 body {
     background-color: lightblue;
 }
-#heading {
+.heading {
     margin-top: 0px;
     padding: 10px;
     background-color: cornflowerblue;
+}
+.title {
+    text-align: center;
+    font-weight:bold ;
 }
 #startButton {
     padding: 5px;
@@ -16,7 +20,7 @@ body {
     margin-top: 20px
     
 }
-#timer {
+.timerBox {
     float: right;
     color: black;
     cursor: pointer;
@@ -37,19 +41,9 @@ body {
     font-size: large;
     
 }
-/*#quizContainer {
-        width:;
-        margin:;
-        padding:;
-        background-color:;
-        border:;
-        border-radiur:;
-        color:;
-        font-weight:;
-        box-shadow:;
-    
-}
-#nextQuest {
+#quizContainer {}
+
+#playAgain {
     position: relative;
     float:right;
-}*/
+}
