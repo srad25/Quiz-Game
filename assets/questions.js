@@ -5,7 +5,7 @@ var questions = [
         choices: {
         A: "Storing numbers, dates, or other values",
         B: "Varying randomly.",
-        C: "Causing high-school algebra flashbacks"
+        C: "Causing high-school algebra flashbacks",
             }, 
     
        Ans: "A"
@@ -15,7 +15,7 @@ var questions = [
        choices: {
        A: "The </script>",
        B: "The <script>",
-       C: "The END statement"
+       C: "The END statement",
             },
    
        Ans: "A"
@@ -25,7 +25,7 @@ var questions = [
        choices: {
        A: "2names",
        B: "_first_and_last_names",
-       C: "FirstAndLast"
+       C: "FirstAndLast",
             },
    
         Ans: "A"
