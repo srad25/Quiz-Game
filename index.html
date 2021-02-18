@@ -6,39 +6,66 @@
     <title>Quiz Game</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </head>
 <body> 
-    <div id="quizContainer" class="container"></div>
+    <header>
+        <a href="score.html">High Scores</a>
+        <span id="timer" class="float-right">Time: </span>
+    </header>
     
-        <div class="heading">
-            <div class="title">JavaScript Quiz!</div>
-            <button id="startButton" type="button" class="btn btn-primary">Start Quiz</button>
-            <div class="timerBox">
-                    <div id="timerNumber">Timer:60</div>
-                </div>
-            </div>       
+    <section>
+    <div class="container " id="home">
+        <div class="row justify-content-center">
+            <div class="col-10 col-lg-8 text-center">
+                <h1>Code Quiz</h1> <br>
+                <p>You have 60 seconds to answer 10 questions. 
+                <p>If your answer is correct, 10 seconds will be added to you score,</p>
+                <strong>BUT</strong> If your answer is incorrect, 10 seconds will be substracted from your score!</p> <br>
+                <button type="button" id="startBtn" class="btn btn-info btn-lg">START</button>
+            </div>
         </div>
-            
-        <div id="quiz" style="display: none">
-            <div id="questions"></div>
-            <div id="answers"></div>
-            <div id="result"></div>   
-
-        </div>
-
-        <div id="endInfo">
-            <h6>Thank you for playing</h4>
-            <h6>Your final score is <span id="finalScore">0</span></h3>
-            <label for="initials">Enter initials:</label>
-            <input type="text" name="initials" maxlength="3" id="urInitials">
-           <button id="submitButton" type="button" class="btn btn-secondary">submit</button>
-        </div>
-      
-        <button id="playAgain" type="button" class="btn btn-secondary"> reset</button>
-
     </div>
+    </section>
 
-        <script src="./assets/questions.js"></script>
-        <script src="./assets/script.js"></script>
+    <section>
+    <div class="container  d-none" id="quiz">
+        <div class="row justify-content-center ">
+            <div class="col-10 col-lg-8" id="QA-block">
+                <h3 id="questions" class="mb-4">QUESTION</h3>
+                <ul id="answers" class="list-unstyled">
+                    <li class="answerChoice">A) </li>
+                    <li class="answerChoice">B) </li>
+                    <li class="answerChoice">C) </li>
+                    <li class="answerChoice">D) </li>
+                </ul>
+                <p class="feedback"></p>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+    <div class="container  d-none" id="scoreBoard">
+        <div class="row justify-content-center ">
+            <div class="col-10 col-lg-8">
+                <h2>Quiz Over!</h2>
+                <p id="userInfo"></p>
+                <form class="userInput">
+                    <label for="new-score">Enter your name: </label>
+                    <input type="text" id="urInitials"> 
+                    <button type="button" class="btn btn-info btn-sm submitBtn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./assets/score.js"></script>
+    <script src="./assets/questions.js"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>

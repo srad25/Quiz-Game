@@ -1,102 +1,52 @@
-//Creat array with questions
+//Create array with questions
 var questions = [
     {
-        question1: "What are variables used for in JavaScript Programs?",
-        choices: {
-        A: "Storing numbers, dates, or other values",
-        B: "Varying randomly.",
-        C: "Causing high-school algebra flashbacks",
-            }, 
-    
-       Ans: "A"
+      title: "What are variables used for in JavaScript Programs?",
+        choices: ["Storing numbers, dates, or other values", "Varying randomly.","Causing high-school algebra flashbacks"],
+         answer: "Storing numbers, dates, or other values"
     },
     {
-       question2: "What should appear at the very end of your JavaScript?",
-       choices: {
-       A: "The </script>",
-       B: "The <script>",
-       C: "The END statement",
-            },
-   
-       Ans: "A"
+       title: "What should appear at the very end of your JavaScript?",
+       choices: ["The </script>", "The <script>", "The END statement"],
+        answer: "The </script>"
     },
    {
-       question3: "Which of the following is not a valid JavaScript variable name?",
-       choices: {
-       A: "2names",
-       B: "_first_and_last_names",
-       C: "FirstAndLast",
-            },
-   
-        Ans: "A"
+       title: "Which of the following is not a valid JavaScript variable name?",
+       choices: ["2names", "_first_and_last_names", "FirstAndLast"],
+        answer: "2names"
     },
    {
-       question4: "Using _______ statement is how you test for a specific condition.",
-       choices: {
-       A: "Select",
-       B: "If",
-       C: "Switch",
-            },
-   
-        Ans: "B"
+       title: "Using _______ statement is how you test for a specific condition.",
+       choices: ["Select", "If", "Switch"],
+        answer: "If"
     },
    {
-       question5: "What is meant by *this* keyword in javascript?",
-       choices: {
-       A: "It refers current object",
-       B: "It referes previous object",
-       C: "It is variable which contains value",
-            },
-   
-       Ans:"A"
+       title: "What is meant by *this* keyword in javascript?",
+       choices: ["It refers current object", "It referes previous object", "It is variable which contains value"],
+        answer:"It refers current object"
     },
     {
-        question6: "JavaScript is... ",
-        choices: {
-        A: "subjective",
-        B: "objective",
-        C: "object based",
-            },
-    
-        Ans: "C"
+        title: "JavaScript is... ",
+        choices: ["subjective", "objective", "object based"],
+         answer: "objective"
     },
     {
-        question7: "String concatenation...",
-        choices: {
-        A: "is the splitting of a String into two or more Strings",
-        B: "is a complex String",
-        C: "is the combination of two or more text Strings",
-            },
-    
-        Ans: "C",
+        title: "String concatenation...",
+        choices: ["is the splitting of a String into two or more Strings", "is a complex String", "is the combination of two or more text Strings"],
+         answer: "is the combination of two or more text Strings"
     },
     {
-        question8: "What is the value of (“dog”.length)?",
-        choices: {
-        A: "4",
-        B: "3",
-        C: "2",
-            },
-    
-        Ans: "C",
+        title: "What is the value of (“dog”.length)?",
+        choices: ["4", "3", "2"],
+         answer: "2"
     },
     {
-        question9: "In an array object, what is the key of the first value?",
-        choices: {
-        A: "0",
-        B: "$",
-        C: "1",
-            },
-    
-        Ans: "A",
+        title: "In an array object, what is the key of the first value?",
+        choices: ["0", "$", "1"],
+         answer: "0"
     },
     {
-        question10: "The var statement is used to:",
-        choices: {
-        A: "Create a new local variable",
-        B: "Retrieve a variable descriptor",
-        C: "Declare a member of a class",
-            },
-    
-        Ans: "A",
+        title: "The var statement is used to:",
+        choices: ["Create a new local variable", "Retrieve a variable descriptor", "Declare a member of a class"],
+         answer: "Create a new local variable"
     }]
