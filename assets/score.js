@@ -3,7 +3,7 @@ var restartBtn = document.querySelector("button.restartBtn"),
 
 // highScores list needs to be turned back into object
     highScores = JSON.parse(localStorage.getItem("highScores") || "[]"),
-    scoreList = document.getElementById("score-list");
+    scoreUp = document.getElementById("scoreCard");
 
 // Scores from high to low
     highScores.sort(function (a,b){
@@ -14,7 +14,7 @@ var restartBtn = document.querySelector("button.restartBtn"),
     for (var i = 0; i < highScores.length; i++) {
         var liTag = document.createElement("li")
         liTag.textContent = highScores[i].urInitials + " - " + highScores[i].score;
-        scoreList.appendChild(liTag);
+        scoreUp.appendChild(liTag);
     }
 
 
@@ -26,3 +26,4 @@ clearBtn.addEventListener("click", function () {
 restartBtn.addEventListener("click", function () {
     history.back();
 });
+/* What am I doing wrong?*/

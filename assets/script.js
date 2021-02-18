@@ -2,17 +2,16 @@
 
 var startBtn = document.getElementById("startBtn");
 var submitBtn = document.querySelector("button.submitBtn")
-
 var scoreEl = document.querySelector("#scoreboard");
 var userForm = document.getElementById("userInfo");
 var myQuestion = document.getElementById("questions");
 var answerChoices = document.getElementById("answers");
 var countDwn = document.getElementById("timer");
 var secondsLeft = (questions.length * 10 + 1);
-
-
-var initials;
 var currentQuestion = -1;
+
+var questions
+var initials;
 var choices;
 var answer;
 var timer;
@@ -21,22 +20,22 @@ var time;
 
 
 
-
+//Set timer and start quiz
 
 function startTimer() {
-  // Hide questions
+// Hide questions until start button is clicked
   document.getElementById("home").classList.add('d-none');
   document.getElementById("quiz").classList.remove('d-none');
 
-  // Set timer and start quiz
+  
   time = 0
   setTimer();
-  // create questions to display
+// create questions to display to user
   askQuestions();
 }
 
 function setTimer() {
-      // Sets timer 
+      
   
      timer = setInterval(function() {
         secondsLeft --;
@@ -49,10 +48,6 @@ function setTimer() {
   }, 1000);
 }
 startBtn.addEventListener("click", startTimer);
-
-
-// Attach event listener to start button to call startGame function on click
-//startButton.addEventListener("click", startGame);
 
 //Start Quiz
 // Get questions from array
@@ -72,7 +67,7 @@ function askQuestions() {
       answerBtn = answerChoices.appendChild(nextChoice).setAttribute("class",  "btn btn-dark btn-block");
   }
 }
-  //write function to display score
+//Write function to display score
 function displayScore() {
   document.getElementById("quiz").classList.add('d-none');
   document.getElementById("scoreBoard").classList.remove('d-none');
@@ -88,16 +83,16 @@ submitBtn.addEventListener("click", function (event) {
 function addScore () {
   initials = document.getElementById("urInitials").value
   
-  // We'll need a new object
+//We'll need a new object
 var newScore = {
       name: initials,
       score: secondsLeft
   };
-  // Check for score in local storage or new array
+//Check for score in local storage or new array
   var highScores = JSON.parse(localStorage.getItem("highScores") || "[]");
-  // push new score (adding new score)
+//Push new score (adding new score)
   highScores.push(newScore)
-  // turn objects into an array of strings then put it into local storage
+//Turn objects into an array of strings then put it into local storage
   localStorage.setItem("highScores", JSON.stringify(highScores));
 
 }
@@ -113,11 +108,11 @@ function showFeedback(){
   fdbk.removeAttribute('style');
 }
 
+//If else
 answerChoices.addEventListener("click", function (event) {
   var fdbk= document.getElementsByClassName("feedback")[0]
   
-  // evaluation of user's answer choices & feedback
-  if (answer === event.target.textContent) {   
+    if (answer === event.target.textContent) {   
       fdbk.innerHTML = "Correct!";
       setTimeout(hideFeedback,1000);
       secondsLeft = secondsLeft +10
