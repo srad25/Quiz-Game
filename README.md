@@ -21,7 +21,7 @@ One of ten questions, with timer running
 ![alt text](./assets/question.png "pic of one of 10 question and current score")
 
 #### Restart/Highscore
-At the end of the quiz the user and store their score and initials, then restart the quiz
+At the end of the quiz the user can store their score and initials, then restart the quiz
 ![alt text](./assets/highScore.png "pic of end of quiz. It ")
 
 ## View deployed application
