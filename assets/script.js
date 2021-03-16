@@ -11,7 +11,6 @@ var secondsLeft = (questions.length * 10 + 1);
 var currentQuestion = -1;
 
 var questions;
-//var initials = document.getElementById("urInitials");
 var choices;
 var answer;
 var timer;

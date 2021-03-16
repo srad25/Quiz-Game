@@ -14,15 +14,17 @@ Correct responses add 10 seconds to the timer, incorrect responses subtracts 10 
 ## Screenhoots of application
 #### Front page
 The start page of the quiz with instructions 
-![alt text](./assets/images/codeQuiz.png "pic of Code Quiz")
+![alt text](./assets/images/codeQuizStart.png "pic of Code Quiz")
 
 #### Question example
 One of ten questions, with timer running
-![alt text](./assets/images/question.png "pic of one of 10 question and current score")
+![alt text](./assets/images/questionTimer.png "pic of one of 10 question and current score")
 
 #### Restart/Highscore
 At the end of the quiz the user can store their score and initials, then restart the quiz
-![alt text](./assets/images/highScore.png "pic of end of quiz. It ")
+* ![alt text](./assets/images/quizOver.png "pic of end of quiz.")
+
+* ![alt text](./assets/images/highScore.png "pic of highscore.")
 
 ## View deployed application
 * https://srad25.github.io/Quiz-Game

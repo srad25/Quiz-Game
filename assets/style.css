@@ -1,49 +1,32 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(252, 251, 249);
 }
-.heading {
-    margin-top: 0px;
+header {
+    margin-top: 20px;
     padding: 10px;
-    background-color: cornflowerblue;
+    background-color: rgb(252, 251, 249);
 }
-.title {
+#home {
     text-align: center;
-    font-weight:bold ;
+    font-weight:20px ;
 }
-#startButton {
-    padding: 5px;
-    background-color: lightgreen;
-    border: lightcyan, solid, 1px;
-    font-size: 16px;
-    height: 30px;
-    line-height: 8px;
-    margin-top: 20px
-    
-}
-.timerBox {
+#timer {
     float: right;
     color: black;
-    cursor: pointer;
-    font-size: x-large;
+    font-size: large;
     line-height: 16px;
-    max-width: 255px;
     padding: 20px 52px;
     text-align: center;
-    margin-top: 0.6em;
-    
-
-  
 }
-#title {
+h1 {
     text-align: center;
     color: black;
     font-weight: bold;
-    font-size: large;
-    
+    font-size: 50px; 
+    margin: 20px;  
 }
-#quizContainer {}
 
-#playAgain {
+#scoreBoard {
     position: relative;
     float:right;
 }
