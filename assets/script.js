@@ -10,8 +10,8 @@ var countDwn = document.getElementById("timer");
 var secondsLeft = (questions.length * 10 + 1);
 var currentQuestion = -1;
 
-var questions
-var initials;
+var questions;
+//var initials = document.getElementById("urInitials");
 var choices;
 var answer;
 var timer;
@@ -64,7 +64,7 @@ function askQuestions() {
       var nextChoice = document.createElement("button");
 
       nextChoice.textContent = choices[i]
-      answerBtn = answerChoices.appendChild(nextChoice).setAttribute("class",  "btn btn-dark btn-block");
+      answerBtn = answerChoices.appendChild(nextChoice).setAttribute("class", "m-2","btn btn-dark btn-block");
   }
 }
 //Write function to display score
@@ -77,11 +77,11 @@ submitBtn.addEventListener("click", function (event) {
   event.stopPropagation();
   addScore();
   
-  window.location.href = "./assets/score.html"
+  window.location.href = "score.html"
 });
 
 function addScore () {
-  initials = document.getElementById("urInitials").value
+ initials = document.getElementById("urInitials").value
   
 //We'll need a new object
 var newScore = {
